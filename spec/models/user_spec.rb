@@ -20,7 +20,7 @@ RSpec.describe User, type: :model do
       end
 
       it 'nicknameが7文字以上では登録できない' do
-        @user.nickname = 'abcdefg' # 7文字のニックネーム
+        @user.nickname = 'abcdefg'
         @user.valid?
         expect(@user.errors.full_messages).to include('Nickname is too long (maximum is 6 characters)')
       end
@@ -46,24 +46,21 @@ RSpec.describe User, type: :model do
       end
 
       it 'パスワードが半角英数字混合であること' do
-        @user.password = 'aaaaaa' # 英字のみの例
-        @user.password_confirmation = 'aaaaaa'
+        @user.password = 'aaaaaa' # 英字のみの場合
         @user.valid?
-        expect(@user.errors.full_messages).to include('Password is invalid')
+        expect(@user.errors.full_messages).to include('Password is invalid. Include both letters and numbers')
       end
-
+      
       it 'パスワードが半角英字のみでは登録できないこと' do
-        @user.password = 'abcdef'
-        @user.password_confirmation = 'abcdef'
+        @user.password = 'aaaaaa' # 英字のみの場合
         @user.valid?
-        expect(@user.errors.full_messages).to include('Password is invalid')
+        expect(@user.errors.full_messages).to include('Password is invalid. Include both letters and numbers')
       end
-
+      
       it 'パスワードが数字のみでは登録できないこと' do
-        @user.password = '123456'
-        @user.password_confirmation = '123456'
+        @user.password = '123456' # 数字のみの場合
         @user.valid?
-        expect(@user.errors.full_messages).to include('Password is invalid')
+        expect(@user.errors.full_messages).to include('Password is invalid. Include both letters and numbers')
       end
 
       it 'パスワードとパスワード（確認）が一致すること' do
