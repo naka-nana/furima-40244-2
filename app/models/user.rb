@@ -24,7 +24,6 @@ class User < ApplicationRecord
   end
 
   # パスワードの複雑さをチェックするカスタムバリデーション
-  validate :password
   def password_complexity
     # パスワードが空、または半角英数字混合であればOK
     return if password.blank? || password =~ /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i
