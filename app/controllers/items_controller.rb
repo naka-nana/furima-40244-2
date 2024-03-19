@@ -1,5 +1,8 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update]
+  before_action :set_item, only: [:edit, :update]
+  before_action :redirect_unless_owner, only: [:edit, :update]
+
   def index
     @items = Item.order(created_at: :desc)
   end
@@ -22,8 +25,28 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
   end
 
+  def edit
+  end
+
+  def update
+    @item = Item.find(params[:id])
+    if @item.update(item_params)
+      redirect_to item_path(@item) # 正しく:idを渡す
+    else
+      render :edit
+    end
+  end
+
   private
   def item_params
-    params.require(:item).permit(:name, :image, :text, :price, :category_id, :condition_id, :region_id, :shippingday_id, :shippingfee_id, :situation_id,)
+    params.require(:item).permit(:name, :image, :text, :price, :category_id, :situation_id, :region_id, :shippingday_id, :shippingfee_id, :situation_id,)
+  end
+
+  def set_item
+    @item = Item.find(params[:id])
+  end
+
+  def redirect_unless_owner
+    redirect_to root_path unless current_user.id == @item.user_id
   end
 end
