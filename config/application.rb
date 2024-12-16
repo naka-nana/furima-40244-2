@@ -26,5 +26,11 @@ module Furima402442
       g.helper false
       g.test_framework false
     end
+    config.generators do |g|
+      g.test_framework nil # 必要に応じてfalseを指定
+    end
+    
+    # Thorのデフォルト値変更を許容
+    
   end
 end
