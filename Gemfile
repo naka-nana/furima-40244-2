@@ -79,3 +79,5 @@ end
 gem 'devise', '~> 4.9.0'
 gem 'factory_bot_rails'
 gem 'faker'
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
