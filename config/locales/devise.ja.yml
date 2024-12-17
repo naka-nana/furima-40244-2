@@ -1,0 +1,7 @@
+ja:
+  devise:
+    failure:
+      unauthenticated: "ログインしてください。"
+    sessions:
+      signed_in: "ログインしました。"
+      signed_out: "ログアウトしました。"
