@@ -19,6 +19,7 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @item = Item.find(params[:id])
   end
 
   private
@@ -28,4 +29,3 @@ class ItemsController < ApplicationController
                                  :shipping_day_id, :price)
   end
 end
-
