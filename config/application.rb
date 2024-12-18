@@ -14,7 +14,7 @@ module Furima402442
     config.time_zone = 'Tokyo'
     config.active_storage.variant_processor = :mini_magick
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
-  end
+  
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
@@ -28,11 +28,8 @@ module Furima402442
       g.helper false
       g.test_framework false
     end
-    config.generators do |g|
-      g.test_framework nil # 必要に応じてfalseを指定
-    end
     
     # Thorのデフォルト値変更を許容
-    
+  end
   
 end

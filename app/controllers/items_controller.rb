@@ -10,8 +10,9 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
+    @item.user_id = current_user.id
     if @item.save
-      redirect_to root_path, notice: 'Item was successfully created.'
+      redirect_to root_path, notice: '出品しました'
     else
       render :new, status: :unprocessable_entity
     end
@@ -20,6 +21,7 @@ class ItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:item).permit(:image, :category_id).marge(user_id)
+    params.require(:item).permit(:image, :item_name, :item_info, :category_id, :condition_id, :prefecture_id, :shipping_id,
+                                 :shipping_day_id, :price)
   end
 end
