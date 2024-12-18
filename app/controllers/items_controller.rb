@@ -25,3 +25,4 @@ class ItemsController < ApplicationController
                                  :shipping_day_id, :price)
   end
 end
+
