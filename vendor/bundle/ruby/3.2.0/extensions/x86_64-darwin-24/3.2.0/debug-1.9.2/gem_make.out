@@ -3,18 +3,18 @@ current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3
 creating Makefile
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-pnfc2n sitelibdir\=./.gem.20241218-5331-pnfc2n clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-b5wn1s sitelibdir\=./.gem.20241218-35672-b5wn1s clean
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-pnfc2n sitelibdir\=./.gem.20241218-5331-pnfc2n
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-b5wn1s sitelibdir\=./.gem.20241218-35672-b5wn1s
 compiling debug.c
 compiling iseq_collector.c
 linking shared-object debug/debug.bundle
 ld: warning: ignoring duplicate libraries: '-lruby.3.2'
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-pnfc2n sitelibdir\=./.gem.20241218-5331-pnfc2n install
-/usr/local/bin/ginstall -c -m 0755 debug.bundle ./.gem.20241218-5331-pnfc2n/debug
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-b5wn1s sitelibdir\=./.gem.20241218-35672-b5wn1s install
+/usr/local/bin/ginstall -c -m 0755 debug.bundle ./.gem.20241218-35672-b5wn1s/debug
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-pnfc2n sitelibdir\=./.gem.20241218-5331-pnfc2n clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-b5wn1s sitelibdir\=./.gem.20241218-35672-b5wn1s clean

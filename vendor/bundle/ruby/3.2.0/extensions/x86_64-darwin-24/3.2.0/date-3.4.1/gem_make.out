@@ -6,10 +6,10 @@ checking for altzone in time.h with  -Werror... no
 creating Makefile
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-lmi2dg sitelibdir\=./.gem.20241218-5331-lmi2dg clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-b21mq0 sitelibdir\=./.gem.20241218-35672-b21mq0 clean
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-lmi2dg sitelibdir\=./.gem.20241218-5331-lmi2dg
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-b21mq0 sitelibdir\=./.gem.20241218-35672-b21mq0
 compiling date_core.c
 compiling date_parse.c
 compiling date_strftime.c
@@ -18,8 +18,8 @@ linking shared-object date_core.bundle
 ld: warning: ignoring duplicate libraries: '-lruby.3.2'
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-lmi2dg sitelibdir\=./.gem.20241218-5331-lmi2dg install
-/usr/local/bin/ginstall -c -m 0755 date_core.bundle ./.gem.20241218-5331-lmi2dg
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-b21mq0 sitelibdir\=./.gem.20241218-35672-b21mq0 install
+/usr/local/bin/ginstall -c -m 0755 date_core.bundle ./.gem.20241218-35672-b21mq0
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-lmi2dg sitelibdir\=./.gem.20241218-5331-lmi2dg clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-b21mq0 sitelibdir\=./.gem.20241218-35672-b21mq0 clean

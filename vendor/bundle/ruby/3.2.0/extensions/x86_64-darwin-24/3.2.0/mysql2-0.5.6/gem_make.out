@@ -35,10 +35,10 @@ Setting rpath to /usr/local/opt/mysql@5.7/lib
 creating Makefile
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.6/ext/mysql2
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-pi0oi0 sitelibdir\=./.gem.20241218-5331-pi0oi0 clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-a2hh7y sitelibdir\=./.gem.20241218-35672-a2hh7y clean
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.6/ext/mysql2
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-pi0oi0 sitelibdir\=./.gem.20241218-5331-pi0oi0
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-a2hh7y sitelibdir\=./.gem.20241218-35672-a2hh7y
 compiling client.c
 In file included from client.c:15:
 ./mysql_enc_name_to_ruby.h:43:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
@@ -60,8 +60,8 @@ linking shared-object mysql2/mysql2.bundle
 ld: warning: ignoring duplicate libraries: '-lruby.3.2'
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.6/ext/mysql2
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-pi0oi0 sitelibdir\=./.gem.20241218-5331-pi0oi0 install
-/usr/local/bin/ginstall -c -m 0755 mysql2.bundle ./.gem.20241218-5331-pi0oi0/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-a2hh7y sitelibdir\=./.gem.20241218-35672-a2hh7y install
+/usr/local/bin/ginstall -c -m 0755 mysql2.bundle ./.gem.20241218-35672-a2hh7y/mysql2
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.6/ext/mysql2
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-pi0oi0 sitelibdir\=./.gem.20241218-5331-pi0oi0 clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-a2hh7y sitelibdir\=./.gem.20241218-35672-a2hh7y clean

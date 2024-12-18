@@ -84,7 +84,7 @@ checked program was:
 DYLD_FALLBACK_LIBRARY_PATH=.:/Users/naka_nana/.rbenv/versions/3.2.2/lib "clang -o conftest -I/Users/naka_nana/.rbenv/versions/3.2.2/include/ruby-3.2.0/x86_64-darwin24 -I/Users/naka_nana/.rbenv/versions/3.2.2/include/ruby-3.2.0/ruby/backward -I/Users/naka_nana/.rbenv/versions/3.2.2/include/ruby-3.2.0 -I. -I/usr/local/opt/gmp/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wundef  -fno-common -pipe conftest.c  -L. -L/Users/naka_nana/.rbenv/versions/3.2.2/lib -L. -fstack-protector-strong -L/usr/local/opt/gmp/lib     -lruby.3.2  -lpthread  "
 Undefined symbols for architecture x86_64:
   "_rb_io_path", referenced from:
-      _t in conftest-0122cb.o
+      _t in conftest-7fb8fb.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -230,7 +230,7 @@ checked program was:
 DYLD_FALLBACK_LIBRARY_PATH=.:/Users/naka_nana/.rbenv/versions/3.2.2/lib "clang -o conftest -I/Users/naka_nana/.rbenv/versions/3.2.2/include/ruby-3.2.0/x86_64-darwin24 -I/Users/naka_nana/.rbenv/versions/3.2.2/include/ruby-3.2.0/ruby/backward -I/Users/naka_nana/.rbenv/versions/3.2.2/include/ruby-3.2.0 -I. -I/usr/local/opt/gmp/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wundef  -fno-common -pipe conftest.c  -L. -L/Users/naka_nana/.rbenv/versions/3.2.2/lib -L. -fstack-protector-strong -L/usr/local/opt/gmp/lib     -lruby.3.2  -lpthread  "
 Undefined symbols for architecture x86_64:
   "_rb_io_closed_p", referenced from:
-      _t in conftest-45887c.o
+      _t in conftest-615c51.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -282,7 +282,7 @@ checked program was:
 DYLD_FALLBACK_LIBRARY_PATH=.:/Users/naka_nana/.rbenv/versions/3.2.2/lib "clang -o conftest -I/Users/naka_nana/.rbenv/versions/3.2.2/include/ruby-3.2.0/x86_64-darwin24 -I/Users/naka_nana/.rbenv/versions/3.2.2/include/ruby-3.2.0/ruby/backward -I/Users/naka_nana/.rbenv/versions/3.2.2/include/ruby-3.2.0 -I. -I/usr/local/opt/gmp/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wundef  -fno-common -pipe conftest.c  -L. -L/Users/naka_nana/.rbenv/versions/3.2.2/lib -L. -fstack-protector-strong -L/usr/local/opt/gmp/lib     -lruby.3.2  -lpthread  "
 Undefined symbols for architecture x86_64:
   "_rb_io_open_descriptor", referenced from:
-      _t in conftest-8579b5.o
+      _t in conftest-64f424.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
