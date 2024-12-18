@@ -14,10 +14,10 @@ checking for Random.bytes... yes
 creating Makefile
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/puma-5.6.9/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-m7xsdz sitelibdir\=./.gem.20241218-5331-m7xsdz clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-z7ceky sitelibdir\=./.gem.20241218-35672-z7ceky clean
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/puma-5.6.9/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-m7xsdz sitelibdir\=./.gem.20241218-5331-m7xsdz
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-z7ceky sitelibdir\=./.gem.20241218-35672-z7ceky
 compiling http11_parser.c
 compiling mini_ssl.c
 compiling puma_http11.c
@@ -25,8 +25,8 @@ linking shared-object puma/puma_http11.bundle
 ld: warning: ignoring duplicate libraries: '-lruby.3.2'
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/puma-5.6.9/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-m7xsdz sitelibdir\=./.gem.20241218-5331-m7xsdz install
-/usr/local/bin/ginstall -c -m 0755 puma_http11.bundle ./.gem.20241218-5331-m7xsdz/puma
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-z7ceky sitelibdir\=./.gem.20241218-35672-z7ceky install
+/usr/local/bin/ginstall -c -m 0755 puma_http11.bundle ./.gem.20241218-35672-z7ceky/puma
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/puma-5.6.9/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-m7xsdz sitelibdir\=./.gem.20241218-5331-m7xsdz clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-z7ceky sitelibdir\=./.gem.20241218-35672-z7ceky clean

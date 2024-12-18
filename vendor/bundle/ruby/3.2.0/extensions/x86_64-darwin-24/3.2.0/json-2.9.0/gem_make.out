@@ -8,17 +8,17 @@ checking for whether -std=c99 is accepted as CFLAGS... yes
 creating Makefile
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/json-2.9.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-kp4za9 sitelibdir\=./.gem.20241218-5331-kp4za9 clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-o5h9zc sitelibdir\=./.gem.20241218-35672-o5h9zc clean
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/json-2.9.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-kp4za9 sitelibdir\=./.gem.20241218-5331-kp4za9
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-o5h9zc sitelibdir\=./.gem.20241218-35672-o5h9zc
 compiling parser.c
 linking shared-object json/ext/parser.bundle
 ld: warning: ignoring duplicate libraries: '-lruby.3.2'
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/json-2.9.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-kp4za9 sitelibdir\=./.gem.20241218-5331-kp4za9 install
-/usr/local/bin/ginstall -c -m 0755 parser.bundle ./.gem.20241218-5331-kp4za9/json/ext
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-o5h9zc sitelibdir\=./.gem.20241218-35672-o5h9zc install
+/usr/local/bin/ginstall -c -m 0755 parser.bundle ./.gem.20241218-35672-o5h9zc/json/ext
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/json-2.9.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-kp4za9 sitelibdir\=./.gem.20241218-5331-kp4za9 clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-o5h9zc sitelibdir\=./.gem.20241218-35672-o5h9zc clean

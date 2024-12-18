@@ -7,17 +7,17 @@ checking for whether -std=c99 is accepted as CFLAGS... yes
 creating Makefile
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-t5zp6g sitelibdir\=./.gem.20241218-5331-t5zp6g clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-bjae51 sitelibdir\=./.gem.20241218-35672-bjae51 clean
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-t5zp6g sitelibdir\=./.gem.20241218-5331-t5zp6g
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-bjae51 sitelibdir\=./.gem.20241218-35672-bjae51
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 ld: warning: ignoring duplicate libraries: '-lruby.3.2'
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-t5zp6g sitelibdir\=./.gem.20241218-5331-t5zp6g install
-/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20241218-5331-t5zp6g/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-bjae51 sitelibdir\=./.gem.20241218-35672-bjae51 install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20241218-35672-bjae51/bootsnap
 
 current directory: /Users/naka_nana/projects/furima-40244-2/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20241218-5331-t5zp6g sitelibdir\=./.gem.20241218-5331-t5zp6g clean
+make DESTDIR\= sitearchdir\=./.gem.20241218-35672-bjae51 sitelibdir\=./.gem.20241218-35672-bjae51 clean
