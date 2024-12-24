@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :edit]
-  before_action :set_item, only: [:edit, :update, :show]
+  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
+  before_action :set_item, only: [:edit, :update, :show, :destroy]
   before_action :check_owner, only: [:edit, :update]
   def index
     @items = Item.order('created_at DESC')
@@ -35,6 +35,11 @@ class ItemsController < ApplicationController
       flash.now[:alert]
       render :edit, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+    @item.destroy
+    redirect_to root_path
   end
 
   private
