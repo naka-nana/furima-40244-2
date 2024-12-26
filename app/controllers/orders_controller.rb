@@ -4,24 +4,19 @@ class OrdersController < ApplicationController
   def index
     @order = @item.order
     @order_address = OrderAddress.new
-    Rails.logger.debug "OrderAddress initialized: #{@order_address.inspect}"
   end
 
   def create
+    Rails.logger.debug "Parameters: #{params.inspect}"
     @order_address = OrderAddress.new(order_address_params)
     if @order_address.valid?
       @order_address.save
-      redirect_to root_path
+      redirect_to root_path, notice: '購入が完了しました'
     else
       flash.now[:alert] = '入力内容を確認してください'
+      Rails.logger.debug @order_address.errors.full_messages
       render :index, status: :unprocessable_entity
     end
-    Address.create(address_params)
-    redirect_to root_path
-  end
-
-  def new
-    @order_address = OderAddress.new
   end
 
   private
@@ -31,9 +26,9 @@ class OrdersController < ApplicationController
   end
 
   def order_address_params
-    params.require(:order_address).permit(:postal_code, :prefecture_id, :city, :house_number, :building, :phone).merge(
+    params.permit(:postal_code, :prefecture_id, :city, :house_number, :building, :phone).merge(
       user_id: current_user.id,
-      item_id: @item_id
+      item_id: @item.id
     )
   end
 
