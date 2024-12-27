@@ -47,7 +47,7 @@ RSpec.describe User, type: :model do
       expect(@user.errors.full_messages).to include "Password is invalid" # rubocop:disable Style/StringLiterals
     end
     it 'passwordは数字だけでは登録できない' do
-      @user.password = 'aaaaaa'
+      @user.password = '111111'
       @user.valid?
       expect(@user.errors.full_messages).to include "Password is invalid" # rubocop:disable Style/StringLiterals
     end
@@ -57,7 +57,6 @@ RSpec.describe User, type: :model do
       expect(@user.errors.full_messages).to include('Password is invalid')
     end
     it 'お名前(last_name)がないと登録できない' do
-      @user = FactoryBot.build(:user)
       @user.last_name = ''
       @user.valid?
       expect(@user.errors.full_messages).to include("Last name can't be blank")
@@ -99,8 +98,7 @@ RSpec.describe User, type: :model do
     end
     it 'お名前カナ(first_name_kana)が
     全角カナでないと登録できない' do
-      @user.first_name_kana = 'tarou
-      '
+      @user.first_name_kana = 'tarou'
       @user.valid?
       expect(@user.errors.full_messages).to include('First name kana is invalid')
     end

@@ -24,8 +24,7 @@ gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
-# Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder"
+
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -52,8 +51,8 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails', '~> 4.0.0'
-  gem 'factory_bot_rails'
-  gem 'faker'
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'faker', '~> 2.20'
 end
 
 group :development do
@@ -70,18 +69,18 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
-  gem "selenium-webdriver"
+  gem "capybara", "~> 3.36"
+  gem "selenium-webdriver", "~> 4.0"
   gem "webdrivers", "= 5.3.0"
+  gem 'database_cleaner-active_record'
   
 end
 
 group :production do
-  gem 'pg'
 end
 gem 'devise', '~> 4.9.0'
-gem 'mini_magick'
-gem 'image_processing', '~> 1.2'
+gem 'mini_magick', '~> 4.11'
+
 gem 'active_hash'
 gem 'rails-i18n', '~> 7.0'
 gem 'rubyzip', '~> 2.3.0'
