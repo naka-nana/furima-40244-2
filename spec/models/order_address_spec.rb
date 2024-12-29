@@ -12,7 +12,7 @@ RSpec.describe OrderAddress, type: :model do
   end
   describe '商品購入' do
     context '商品購入できる時' do
-      it 'すべての項目が正しく入力されている場合、購入できる' do
+      it 'tokenがあれば保存ができること' do
         expect(@order_address).to be_valid
       end
       it 'buildingは空でも購入できる' do
@@ -22,17 +22,17 @@ RSpec.describe OrderAddress, type: :model do
       it 'postal_codeが空の場合、購入できない' do
         @order_address.postal_code = ''
         expect(@order_address).to_not be_valid
-        expect(@order_address.errors.full_messages).to include("Postal code can't be blank")
+        expect(@order_address.errors.full_messages).to include('Postal code を正しい形式で入力してください（例: 123-4567）')
       end
       it 'postal_codeが半角のハイフン含んだ正しい形式でない場合、購入できない' do
         @order_address.postal_code = '1234567'
         expect(@order_address).to_not be_valid
-        expect(@order_address.errors.full_messages).to include('Postal code is invalid. Include hyphen(-)')
+        expect(@order_address.errors.full_messages).to include('Postal code を正しい形式で入力してください（例: 123-4567）')
       end
       it 'prefectureを選択していない場合、購入できない' do
         @order_address.prefecture_id = '1'
         expect(@order_address).to_not be_valid
-        expect(@order_address.errors.full_messages).to include("Prefecture can't be blank")
+        expect(@order_address.errors.full_messages).to include('Prefecture を選択してください')
       end
       it 'cityが空の場合、購入できない' do
         @order_address.city = ''
@@ -47,6 +47,11 @@ RSpec.describe OrderAddress, type: :model do
       it 'phoneが空の場合、購入できない' do
         @order_address.phone = ''
         expect(@order_address).to_not be_valid
+      end
+      it 'tokenが空では登録できないこと' do
+        @order_address.token = nil
+        @order_address.valid?
+        expect(@order_address.errors.full_messages).to include("Token can't be blank")
       end
       it 'userが紐づいていない場合、購入できない' do
         @order_address.user_id = nil
