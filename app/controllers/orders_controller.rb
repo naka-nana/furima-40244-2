@@ -1,6 +1,7 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!, except: :index
   before_action :set_item
+  before_action :redirect_if_sold_out, only: [:index, :create]
   def index
     gon.public_key = ENV['PAYJP_PUBLIC_KEY']
     @order = @item.order
@@ -50,5 +51,11 @@ class OrdersController < ApplicationController
     @item = Item.find(params[:item_id])
   rescue ActiveRecord::RecordNotFound
     redirect_to root_path, alert: '指定された商品が見つかりませんでした。'
+  end
+
+  def redirect_if_sold_out
+    return unless @item.sold_out?
+
+    redirect_to root_path, alert: 'この商品は既に売却済みです。'
   end
 end

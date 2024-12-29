@@ -2,6 +2,7 @@ class ItemsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
   before_action :set_item, only: [:edit, :update, :show, :destroy]
   before_action :check_owner, only: [:edit, :update]
+  before_action :check_item_status, only: [:edit, :destroy]
   def index
     @items = Item.order('created_at DESC')
   end
@@ -46,6 +47,12 @@ class ItemsController < ApplicationController
 
   def set_item
     @item = Item.find(params[:id])
+  end
+
+  def check_item_status
+    return unless @item.sold_out?
+
+    redirect_to root_path, alert: 'この商品は既に購入済みのため、編集や削除はできません。'
   end
 
   def check_owner

@@ -5,3 +5,11 @@ ja:
     sessions:
       signed_in: "ログインしました。"
       signed_out: "ログアウトしました。"
+  activemodel:
+    attributes:
+      order_address:
+        prefecture_id: 都道府県
+        city: 市区町村
+        house_number: 番地
+        building: 建物名
+        phone: 電話番号
