@@ -1,4 +1,8 @@
 const pay = () => {
+  if (typeof gon === 'undefined' || !gon.public_key) {
+    console.warn("gon.public_key が定義されていません");
+    return;
+  }
   const publicKey = gon.public_key;
   const payjp = Payjp(publicKey);
   const elements = payjp.elements();
