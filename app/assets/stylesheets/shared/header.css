@@ -102,3 +102,59 @@
   text-decoration: none;
   color: #333333;
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* ホバー時のスムーズな色変化 */
+}
+
+.dropdown-toggle:hover {
+  background-color: #f0f0f0; /* ホバー時の背景色 */
+  color: #333; /* ホバー時の文字色 */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* トリガーの真下に配置 */
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: none; /* 初期状態で非表示 */
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* 表示時のクラス */
+.dropdown-menu.hidden {
+  display: none;
+}
+
+.dropdown-menu.visible {
+  display: block;
+}

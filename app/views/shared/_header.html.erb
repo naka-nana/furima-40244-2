@@ -11,7 +11,14 @@
   </div>
   <div class='nav'>
     <ul class='lists-left'>
-      <li><%= link_to 'カテゴリー', "#", class: "category-list" %></li>
+      <li class="dropdown">
+        <%= link_to 'カテゴリー', "#", class: "dropdown-toggle" %>
+        <ul class="dropdown-menu hidden">
+          <% Category.all.each do |category| %>
+            <li><%= link_to category.name, "#" %></li>
+          <% end %>
+        </ul>
+      </li>
       <li><%= link_to 'ブランド', "#", class: "brand-list" %></li>
     </ul>
     <ul class='lists-right'>
