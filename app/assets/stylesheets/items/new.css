@@ -228,11 +228,49 @@
   font-size: 13px;
 }
 
-.preview-image {
-  max-width: 150px; /* 画像の最大幅 */
-  max-height: 150px; /* 画像の最大高さ */
-  border: 1px solid #ccc; /* 枠線を追加 */
-  border-radius: 8px; /* 角丸 */
-  object-fit: cover; /* 画像のサイズを枠内に収める */
+.preview {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
 
+.image-delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+
+.other-images {
+  display: flex;            /* Flexboxで横並び */
+  justify-content: flex-start; /* 左から順に配置 */
+  gap: 10px;               /* 画像間の余白 */
+  max-width: 100%;         /* 親要素の幅を超えないようにする */
+}
+
+.other-image {
+  width: 100px;            /* 幅固定 */
+  height: 100px;           /* 高さ固定 */
+}
+
+.preview-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;       /* 画像の比率を保ったままリサイズ */
+  border: 1px solid #ddd;
+}
+.image-delete-button {
+  text-align: center;
+  border: solid 1px;
+  cursor: pointer;
+}
+
+.main-image {
+  height: 200px;
+  width: 200px;
 }
