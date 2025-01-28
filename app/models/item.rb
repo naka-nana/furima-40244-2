@@ -7,8 +7,8 @@ class Item < ApplicationRecord
   belongs_to :shipping_day
   belongs_to :user
   has_one :order
-  has_one_attached :image
-  validates :image, presence: true
+  has_many_attached :images
+  validates :images, presence: true
   validates :item_name, presence: true, length: { maximum: 40 }
   validates :item_info, presence: true, length: { maximum: 1000 }
   validates :category_id, :condition_id, :prefecture_id, :shipping_id, :shipping_day_id, presence: true,
